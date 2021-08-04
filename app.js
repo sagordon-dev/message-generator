@@ -109,9 +109,9 @@ const adjectiveList = [
   "colorful",
 ];
 
-const randomMessageGenerator = () => {
-  const randomNumberGenerator = (num) => {
-    let randomNumber = Math.floor(Math.random() * num);
+const randomMessageGenerator = (array) => {
+  const randomNumberGenerator = (array) => {
+    let randomNumber = Math.floor(Math.random() * array.length);
     return randomNumber;
   };
 
