@@ -155,4 +155,4 @@ document.getElementById('message2').innerHTML = `    A vacation is when you take
   ${randomArray(adjectiveList)} and because they have to work ${Math.ceil(Math.random() * 24)}
   hours every day all year making enough ${randomArray(pluralNounList)} to pay
   for vacation. \n`
-}
+};
