@@ -2,13 +2,25 @@ body {
   margin: 10px;
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(242, 244, 244);
+}
+
+header {
+  background-color: rgb(218, 247, 166);
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin: 5px;
+  padding: 5px;
+  display: inline-block;
 }
 
 h1 {
   font-size: 3rem;
   margin: 5px;
   padding: 5px;
-
 }
 
 h2 {
@@ -17,17 +29,56 @@ h2 {
   padding: 5px;
 }
 
+h3 {
+  font-size: 1.5rem;
+  margin: 5px;
+  padding: 5px;
+}
+
 p {
-	font-size: 1.25rem;
-	margin: 2.5px;
-	padding: 2.5px;
+  font-size: 1.25rem;
+  margin: 2.5px;
+  padding: 2.5px;
 }
 
 button {
-	background-color: blueviolet;
-	color: white;
+  background-color: rgb(74, 35, 90);
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+#message1,
+#message2 {
+  background-color: rgb(244, 236, 247);
+  color: #000;
+}
+
+.noun {
+  color: red;
+}
+
+.verb {
+  color: blue;
+}
+
+.adjective {
+  color: green;
+}
+
+.plural-noun {
+  color: darkred;
+}
+
+.ing-verb {
+  color: darkblue;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
 	margin: 5px;
 	padding: 5px;
-	font-size: 1.25rem;
-	font-weight: bold;
 }
