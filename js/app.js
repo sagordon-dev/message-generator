@@ -119,7 +119,7 @@ const randomArray = (array) => {
 }
 
 const arcadeMadLibCreator = () => {
-  let arcadeMadLib = `    When I go to the arcade with my ${randomArray(pluralNounList)} 
+  document.getElementById('message1').innerHTML = `    When I go to the arcade with my ${randomArray(pluralNounList)} 
   there are lots of games to play. I spend lots of time there with my friends. 
   In the game X-Men you can be different ${randomArray(pluralNounList)}. 
   The point of the game is to ${randomArray(verbList)} every robot. 
@@ -136,12 +136,10 @@ const arcadeMadLibCreator = () => {
   You can save your ${randomArray(pluralNounList)} for another time. 
   When I went to this arcade I didn't believe how much fun it would be. So far I 
   have had a lot of fun every time I've been to this great arcade! \n`;
-
-  return arcadeMadLib;
 };
 
 const vacationMadLibCreator = () => {
-  let vacationMadLib = `    A vacation is when you take a trip to some ${randomArray(adjectiveList)} place
+document.getElementById('message2').innerHTML = `    A vacation is when you take a trip to some ${randomArray(adjectiveList)} place
   with your ${randomArray(adjectiveList)} family. Usually you go to some place
   that is near a/an ${randomArray(nounList)} or up on a/an ${randomArray(nounList)}.
   A good vacation place is one where you can ride ${randomArray(pluralNounList)}
@@ -157,9 +155,4 @@ const vacationMadLibCreator = () => {
   ${randomArray(adjectiveList)} and because they have to work ${Math.ceil(Math.random() * 24)}
   hours every day all year making enough ${randomArray(pluralNounList)} to pay
   for vacation. \n`
-
-  return vacationMadLib;
 }
-
-console.log(arcadeMadLibCreator());
-console.log(vacationMadLibCreator());
